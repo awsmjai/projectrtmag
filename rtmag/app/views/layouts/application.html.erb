@@ -1,14 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Rtmag</title>
-  <%= stylesheet_link_tag    'application', media: 'all'%>
-  <%= javascript_include_tag 'application' %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<!DOCTYPE HTML>
+<html style="height:100%">
+  <head>
+    <meta charset="utf-8">
+    <title>RTMAG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <%= stylesheet_link_tag  'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <%= csrf_meta_tags %>
 
-<%= yield %>
-
-</body>
+  </head>
+  <body>
+    <%= yield %>
+    
+  </body>
 </html>
