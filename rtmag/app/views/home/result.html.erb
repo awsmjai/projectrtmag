@@ -1,0 +1,10 @@
+<h2>Tweets Result</h2>
+<div id="twts">
+ <% @tweet.each do |tweet| %>
+ <% unless tweet.media? %>
+ <% else %>
+   <% a=tweet.media[0].media_url.to_s.concat(":large") %>
+   <div class="show-thumbnail"><%= image_tag a, :width => 300 %></div>
+   <% end %>
+ <% end %>
+</div>

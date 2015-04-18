@@ -79,7 +79,7 @@
        $('#pageview').click(function(){
         
         if(pathArray[1] != "features" && pathArray[2] == undefined){
-          window.location.href = "features.html";
+          window.location.href = "features";
         }else{
           var hold = document.referrer;
           hold = hold.split('index.html');
