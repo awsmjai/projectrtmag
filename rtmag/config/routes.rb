@@ -7,6 +7,9 @@ Rails.application.routes.draw do
    root 'home#index'
    get '/features' => 'home#features'
    get '/result' => 'home#result'
+   get '/magzine' => 'home#magzine'
+   get '/search' => 'home#result'
+   get '/index' => 'home#index'
    #get '/ddvscsk' => 'home#ddvscsk'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

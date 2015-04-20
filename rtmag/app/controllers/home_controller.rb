@@ -1,12 +1,13 @@
 class HomeController < ApplicationController
+  
 	def features
 		render :layout => 'features'
 	end
 
   def result
     get_client
-      @tweet = @client.search(params[:key], :include_entities=>true, :result_type => "mixed").take(10)
-  end
+      @tweet = @client.search("#{params[:key]} filter:images", :include_entities=>true, :result_type => "recent").take(50)
+   end
 
   def get_client
     @client = Twitter::REST::Client.new do |config|

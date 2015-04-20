@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<br>
+<%= form_tag("/search", :method => "get") do %>
+    <%= text_field_tag(:key) %>
+    <%= submit_tag("Create") %>
+<% end %>
+
+</body>
+</html>
