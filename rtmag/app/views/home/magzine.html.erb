@@ -4,6 +4,7 @@
 <br>
 <%= form_tag("/search", :method => "get") do %>
     <%= text_field_tag(:key) %>
+    <p>Location</p><%= text_field_tag(:address) %>
     <%= submit_tag("Create") %>
 <% end %>
 

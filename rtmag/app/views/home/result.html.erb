@@ -1,10 +1,149 @@
+<!DOCTYPE html>
+<html>
+<body>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-12573 node-type-article" style="display: block;">
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <!--[if (gte IE 9)|(gt IEMobile 7)|(!IE)]><!-->
+<div id="coverit" style="position: absolute; width: 100%; height: 100%; z-index: 11; display: none; background: white;"></div>
+<noscript style="  position: relative; z-index: 12;">I'm sorry but to view this site you need Javascript enabled</noscript>
+<!--<![endif]-->
+<div class="slide_area">
+			
+		<div id="slide_menu">
+			<img src="assets/logo.png" alt="Sport magazine" class="close-logo">
 
+      <!--[if lte IE 9]><div id="shownOnlyOnceADay">
+        <p>For the best viewing experience you should upgrade your copy of Internet Explorer</p>
+      </div><![endif]-->
+
+			  <div class="region region-slide">
+    		<div id="block-system-main-menu" class="block block-system block-menu">
+  				<div class="content">
+                    <ul class="menu"><li class="first leaf"><a href="index.html">Home</a></li>
+                        <li class="leaf"><a href="magzine">create Your Own</a></li>
+                        <li class="last leaf"><a href="contact.html" title="">Contact Us</a></li>
+                    </ul> 
+ 				</div>
+			</div>
+  		</div>
+
+      <div id="slide_share">
+        <a href="#" id="facebook" title="Facebook" target="_blank"></a>
+        <a href="#" id="twitter" title="Twitter" target="_blank"></a>
+        <a href="#" id="youtube" title="YouTube" target="_blank"></a>
+      </div>
+
+		</div>
+	</div>
+
+<div id="wrapper">
+	<div class="main_container">
+		<section class="header-area">
+      		<a href="index">
+              <div id="logo">
+                <img src="assets/logo2.png" alt="Sport magazine" id="logoImg">
+              </div>
+            </a>
+      
+			<div class="menubuttons">
+				<div id="search">
+	              <form action="http://www.sport-magazine.co.uk/search" id="cse-search-box">
+	                  <input type="hidden" name="cx" value="partner-pub-6195145773606154:3291545348">
+	                  <input type="hidden" name="cof" value="FORID:10">
+	                  <input type="hidden" name="ie" value="UTF-8">
+	                  <input type="text" name="as_q" size="15">
+	                  <input type="submit" name="sa" value="Search">
+	              </form>
+	            </div>
+	            <button id="search-button"></button>
+	            <!--[if (gte IE 9)|(gt IEMobile 7)|(!IE)]><!--><button id="pageview"></button><!--<![endif]-->
+              <!--[if lte IE 9]><a href="/features" id="pageview"></a><![endif]-->
+	            <button class="slide-toggler rotate"></button>
+			</div>			
+		</section>
+
+<section class="content-area">
+			<div class="tabs"></div>
+				<h1 class="taxTitle">Susie Wolff</h1>
+				<div class="region region-content">
+    				<div id="block-system-main" class="block block-system">
+						<div class="content">
+    						<div id="node-12573" class="node node-article node-promoted clearfix">
+        					<div class="headerwrap">
+        						<div class="group-left">
+          							<div>
+                                      	<div class="title-wrap"><h1 class="field-name-title"><span id="titlespan">Susie Wolff</span></h1></div>
+                                    	<div class="summary"><div class="field field-name-field-teaser-summary field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">Sport meets the first woman to have taken part in a Formula 1 weekend for more than 20 years</div></div></div></div>
+            
+          							</div>
+        						</div>
+        <div class="group-right">
+          <div class="content">
+            <div class="working withjs"><div class="field field-name-field-teaser-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><div id="backimg" style="background-image: url(assets/kkr-vs-mi/banner-kkr.jpg); background-position: 50% 0%; background-repeat: no-repeat;"><img src="assets/kkr-vs-mi/banner-kkr.jpg" width="1707" height="1366" alt="Susie Wolff" id="theimage"></div></div></div></div></div>
+            
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+            
+          </div>
+        </div>
+      </div>
+
+
+      <div id="bodywrap">
+         <div id="bodywrap2">
+          <div id="bodywrap3" class="related">
+          	<div class="submitted">
+            	<div id="sub_top">
+                	<div id="author"><p>words<br><b>Amit Katwala</b></p></div><div id="pubDate"><p>date<br><b>February 19th| 2015</b></p></div>                                  <div id="inIssue"><p>issue<br><b></b></p><a href="http://www.sport-magazine.co.uk/issues/issue-391" style="color: #000; text-decoration: none;"><div class="field field-name-field-issue-number field-type-number-integer field-label-hidden"><div class="field-items"><div class="field-item even"><b>391</b></div></div></div></a><p></p></div>
+                   <div id="share-widget">
+                    <div class="pw-widget pw-size-large">
+                      <a class="pw-button-facebook"></a>
+                      <a class="pw-button-twitter"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+</section>
+
+<div id="bodywrap3">
 <div id="twts">
+<% @tag.each do |tag| %>
+
+    <div class="show-thumbnail"><%= image_tag tag.images.standard_resolution.url %></div>
+<% end %>
  <% @tweet.each do |tweet| %>
  <% unless tweet.media? %>
  <% else %>
    <% a=tweet.media[0].media_url.to_s.concat(":large") %>
    <div class="show-thumbnail"><%= image_tag a %></div>
    <% end %>
- <% end %>
+ <% end %> 
 </div>
+</div>
+</div>
+</div>
+
+<section class="footer-area">
+	<section id="footwrap">
+    	<span id="copyright">IPL Realtime © 2015</span>
+  			<div class="region region-footer">
+    		<div id="block-menu-menu-footer-menu" class="block block-menu">
+				<div class="content">
+                    <ul class="menu"><li class="first leaf"><a href="#" title="">About</a></li>
+                        <li class="leaf"><a href="#" title="">Advertise</a></li>
+                        <li class="last leaf"><a href="#" title="">Legal</a></li>
+                    </ul>
+				</div>
+			</div>
+  		</div>
+	</section>
+</section>
+
+</body>
+</html>
