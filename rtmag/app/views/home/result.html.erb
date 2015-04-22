@@ -81,7 +81,8 @@
         						</div>
         <div class="group-right">
           <div class="content">
-            <div class="working withjs"><div class="field field-name-field-teaser-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><div id="backimg" style="background-image: url(assets/kkr-vs-mi/banner-kkr.jpg); background-position: 50% 0%; background-repeat: no-repeat;"><img src="assets/kkr-vs-mi/banner-kkr.jpg" width="1707" height="1366" alt="Susie Wolff" id="theimage"></div></div></div></div></div>
+            <div class="working withjs"><div class="field field-name-field-teaser-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><div id="backimg" style="background-position: 50% 0%; background-repeat: no-repeat;">
+            <img src="<%=@tag[0].images.standard_resolution.url%>" width="1707" height="1366" alt="Susie Wolff" id="theimage"></div></div></div></div></div>
             
           </div>
         </div>
@@ -111,10 +112,10 @@
               </div>
 </section>
 
-<div id="bodywrap3">
-<div id="twts">
+<div id="bodywrap3" >
+<div id="twts" >
 <% @tag.each do |tag| %>
-
+  <%#debugger%>
     <div class="show-thumbnail"><%= image_tag tag.images.standard_resolution.url %></div>
 <% end %>
  <% @tweet.each do |tweet| %>

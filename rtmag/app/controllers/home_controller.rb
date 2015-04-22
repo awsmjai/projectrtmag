@@ -11,7 +11,7 @@ class HomeController < ApplicationController
       lng = Geocoder.search(params[:address]).first.coordinates.last
       @tweet = @client.search("#{params[:key]} filter:images", :include_entities=>true, :geocode => "#{lat},#{lng},10mi", :result_type => "recent").take(20)
     else
-      @tweet = @client.search("#{params[:key]} filter:images", :include_entities=>true, :result_type => "recent").take(20)
+      @tweet = @client.search("#{params[:key]} filter:images", :include_entities=>true, :result_type => "recent").take(50)
     end
 
     client = Instagram.client(:access_token => session[:access_token])
